@@ -36,8 +36,10 @@ pip install -e . || echo "editable install skipped"
 3. Open `notebooks/ZNO_Score_Analysis_and_Prediction.ipynb` and run all cells.
 
 # For contributors (dev tools + Jupyter)
-pip install -r requirements-dev.txt
-pre-commit install
+    ```bash
+    fpip install -r requirements-dev.txt
+    pre-commit install
+    ```
 
 ## Data expectations
 - **File naming:** contains a year token like `2018`, `2021`.
@@ -117,5 +119,6 @@ make clean     # remove caches and build artifacts
 
 ---
 © 2025 MIT License
+
 
 
