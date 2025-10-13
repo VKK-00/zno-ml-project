@@ -1,7 +1,7 @@
-# ZNO Outcomes: Leakage‑aware Modeling (2016–2021)
+# ZNO Outcomes: Leakage‑aware Modelling (2016–2021)
 
-End‑to‑end, leakage‑aware modeling on Ukrainian standardized tests (ZNO).
-The pipeline ingests multi‑year raw files, harmonizes schema, enforces a temporal split
+End‑to‑end, leakage‑aware modelling on Ukrainian standardised tests (ZNO).
+The pipeline ingests multi‑year raw files, harmonises the schema, and enforces a temporal split
 (train: 2016–2020 → test: 2021), trains baselines and ensembles with early stopping,
 and produces diagnostics, fairness slices with confidence intervals, feature importance,
 and artifacts under `artifacts/`.
@@ -35,6 +35,10 @@ pip install -e . || echo "editable install skipped"
     ```
 3. Open `notebooks/ZNO_Score_Analysis_and_Prediction.ipynb` and run all cells.
 
+# For contributors (dev tools + Jupyter)
+pip install -r requirements-dev.txt
+pre-commit install
+
 ## Data expectations
 - **File naming:** contains a year token like `2018`, `2021`.
 - **Formats supported:** `;`‑delimited CSV/TXT with encodings `cp1251` / `utf‑8` / `latin1`, plus XLS/XLSX.
@@ -42,7 +46,7 @@ pip install -e . || echo "editable install skipped"
 - **Target:** `average_test_score` built from `*ball12` (zeros treated as missing).
 
 ## Highlights
-- Robust ingestion and schema harmonization across years and encodings
+- Robust ingestion and schema harmonisation across years and encodings
 - Leakage‑aware target and strict temporal split (2016–2020 → 2021)
 - Baselines (Dummy), ensembles (RandomForest/XGBoost with early stopping)
 - Diagnostics: residuals, calibration, deciles
@@ -113,4 +117,5 @@ make clean     # remove caches and build artifacts
 
 ---
 © 2025 MIT License
+
 
