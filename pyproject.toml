@@ -20,3 +20,13 @@ ignore = ["E501"]
 [tool.pytest.ini_options]
 addopts = "-q"
 testpaths = ["tests"]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
