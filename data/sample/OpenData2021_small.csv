@@ -1,0 +1,5 @@
+year;eoname;areaname;regname;umlball12;histball12;mathball12;umlteststatus;histteststatus;mathteststatus;birth;sextypename;tertypename;tername
+2021;School A;Area1;Region1;6;;5;has score;no score;has score;2002;female;місто;м. Київ
+2021;School A;Area1;Region1;8;10;;has score;has score;no score;2003;male;селище міського типу;смт Іванків
+2021;School A;Area1;Region1;;9;6;has score;has score;has score;2004;female;селище, село;с. Петрівка
+2021;School B;Area2;Region2;7;;3;has score;no score;has score;2004;male;місто;м. Львів
