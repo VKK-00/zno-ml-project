@@ -37,7 +37,7 @@ pip install -e . || echo "editable install skipped"
 
 # For contributors (dev tools + Jupyter)
 ```bash
-fpip install -r requirements-dev.txt
+pip install -r requirements-dev.txt
 pre-commit install
 ```
 
@@ -119,6 +119,7 @@ make clean     # remove caches and build artifacts
 
 ---
 © 2025 MIT License
+
 
 
 
