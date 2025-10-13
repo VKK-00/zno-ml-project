@@ -6,7 +6,6 @@ The pipeline ingests multi‑year raw files, harmonizes schema, enforces a tempo
 and produces diagnostics, fairness slices with confidence intervals, feature importance,
 and artifacts under `artifacts/`.
 
-![CI](https://github.com/<your-username>/zno-ml-project/actions/workflows/ci.yml/badge.svg)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![Code style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)
@@ -65,4 +64,5 @@ make clean     # remove caches and build artifacts
 
 ---
 © 2025 MIT License
+
 
