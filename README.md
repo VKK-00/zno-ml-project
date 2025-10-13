@@ -10,6 +10,7 @@ and artifacts under `artifacts/`.
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![Code style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)
 
+See [CONTRIBUTING.md](CONTRIBUTING.md) for style, tests, and PR flow.
 
 ## Quick start
 ```bash
@@ -64,5 +65,6 @@ make clean     # remove caches and build artifacts
 
 ---
 © 2025 MIT License
+
 
 
