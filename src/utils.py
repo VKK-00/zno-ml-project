@@ -555,6 +555,7 @@ def set_matplotlib_cyrillic(
     Picks the first actually installed font from `prefer` and uses it.
     """
     import warnings
+    
     import matplotlib as mpl
     from matplotlib import font_manager as fm
 
@@ -578,4 +579,5 @@ def set_matplotlib_cyrillic(
 
     if verbose:
         print(f"[utils] Cyrillic font = {installed[0]} | candidates used: {installed}")
+
 
