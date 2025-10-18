@@ -7,8 +7,9 @@ Usage:
 from __future__ import annotations
 
 import datetime
-from pathlib import Path
 import textwrap
+from pathlib import Path
+
 import nbformat as nbf
 
 # ----------------------------- scaffold dirs -----------------------------
@@ -1881,5 +1882,6 @@ nb.cells = [
 
 with open(ROOT/"notebooks"/"ZNO_Score_Analysis_and_Prediction.ipynb", "w", encoding="utf-8") as f:
     nbf.write(nb, f)
+
 
 print("✅ Project scaffolded. Open notebooks/ZNO_Score_Analysis_and_Prediction.ipynb and run.")
