@@ -578,3 +578,4 @@ def set_matplotlib_cyrillic(
 
     if verbose:
         print(f"[utils] Cyrillic font = {installed[0]} | candidates used: {installed}")
+
