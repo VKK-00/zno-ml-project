@@ -1,8 +1,11 @@
 import numpy as np
 import pandas as pd
+
 from src.utils import (
-    build_average_12, derive_testlanguage, attach_school_history_oot,
-    derive_dpa_flags
+    attach_school_history_oot,
+    build_average_12,
+    derive_dpa_flags,
+    derive_testlanguage,
 )
 
 def toy_df():
@@ -47,3 +50,4 @@ def test_derive_dpa_flags_shapes():
     out = derive_dpa_flags(df)
     for col in ["took_uml","took_math","took_hist","took_foreign_any","n_tests_taken","dpa_required_done"]:
         assert col in out.columns
+
