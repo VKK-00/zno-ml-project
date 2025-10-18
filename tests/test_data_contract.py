@@ -1,4 +1,5 @@
 from pathlib import Path
+
 from src.utils import discover_data_files, load_year_file
 
 def test_contract_smoke():
@@ -8,3 +9,4 @@ def test_contract_smoke():
     p, year = pairs[0]
     df = load_year_file(p, year)
     assert isinstance(df.shape, tuple)
+
